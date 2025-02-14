@@ -1,7 +1,8 @@
-function App() {
-  const [count, setCount] = useState(0);
+import React from "react";
+import Header from "./components/Header";
 
-  return <></>;
-}
+const App = () => {
+  return <Header />;
+};
 
 export default App;
