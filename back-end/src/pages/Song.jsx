@@ -1,8 +1,15 @@
 import React from "react";
 import Player from "../components/Player";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import { songsArray } from "../assets/database/songs";
 
 const Song = () => {
+  const { id } = useParams();
+
+  const songsArrayFromArtist = songsArray.filter(
+    (currentSongObj) => currentSongObj.id === Number(id)
+  )[0];
+
   return (
     <div className="song">
       <div className="song__container">
