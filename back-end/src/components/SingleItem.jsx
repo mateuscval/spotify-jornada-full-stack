@@ -14,7 +14,7 @@ const SingleItem = ({ id, name, image, banner, artist, idPath }) => {
             alt={`Imagem do Artista ${name}`}
           />
 
-          <FontAwesomeIcon className="single-item__icon " icon={faCirclePlay} />
+          <FontAwesomeIcon className="single-item__icon" icon={faCirclePlay} />
         </div>
       </div>
       <div className="single-item__texts">
